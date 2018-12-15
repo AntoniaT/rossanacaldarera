@@ -4,34 +4,38 @@
 
     <meta charset="UTF-8">
     <title>Rossana Caldarera</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/Logo">
 
 </head>
 <body id="frontpage">
   <header>
     <img id="frontpageImg" src="images/frontpage2.png" alt="photo of rossana frontpage">
+
+    <!-- NAVIGATION FOR DESKTOP-->
     <nav id="frontpageNav">
                 <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
                 <a><img src="images/" alt="logo rossana"></a>
                 <a href="about.html" id="nav1">About me</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
-    <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
+                <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
 
     </nav>
+
+    <!-- BURGER NAVIGATION FOR MOBILE-->
+
     <div class="overlay hidden">
-    <div class="overlay-links" >
                 <a href="" id="closeMenu" >&times;</a>
                 <a href="about.html" id="nav1">About me</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
     </div>
-    </div>
 
     </header>
 
-    <!--here is the template to insert data from Frontpage Post in WP -->
+    <!--TEMPLATE to insert data from Frontpage Post in WP -->
+
     <template id="frontpageTemplate">
         <article>
                     <p id="sectionContent">LONG TEXT</p>
@@ -40,6 +44,8 @@
         </article>
     </template>
 
+    <!--END OF TEMPLATE -->
+
     <div id="whoIamContainer">
         <h2>Who I am</h2>
         <!-- Append template from WP "Who I am" Post here -->
@@ -47,10 +53,11 @@
     </div>
 
     <div id="career">
-        <h2>My Career</h2>
-        <p>My professional dance journey started at the age of 18, when I participated in the dance competition “Danza and State” and won a scholarship to study at the Academy Balletto di Toscana-Opus Ballet in Florence, Italy.<br>I studied there for 2 years, becoming a dance member of the Junior BDT and the Opus Ballet Company. I got the chance to work with choreographers as Mauro Bigonzetti, Fabrizio Monteverde and Daniel Tinazzi.<br>In 2003 I left Italy for France where I met Dominique Lesdema. With him I refined my professional dance education and joined his modern company “Kinetic”.<br>Since then, I've also had the privilege to work with many other inspiring choreographers in France and the Netherlands.
+        <h2 id="careerTitle">My Career</h2>
+        <p id="careerP">My professional dance journey started at the age of 18, when I participated in the dance competition “Danza and State” and won a scholarship to study at the Academy Balletto di Toscana-Opus Ballet in Florence, Italy.<br>I studied there for 2 years, becoming a dance member of the Junior BDT and the Opus Ballet Company. I got the chance to work with choreographers as Mauro Bigonzetti, Fabrizio Monteverde and Daniel Tinazzi.<br>In 2003 I left Italy for France where I met Dominique Lesdema. With him I refined my professional dance education and joined his modern company “Kinetic”.<br>Since then, I've also had the privilege to work with many other inspiring choreographers in France and the Netherlands.
         </p>
-        <a><div></div>Read more</a>
+        <a id="careerMoreButton"><div></div>Read more</a>
+        <img id="careerImg" src="images/rosa2.png" alt="career photo rossana">
 
 
     </div>
@@ -70,8 +77,8 @@
         <p>I'm always open to (international) collaborations, so contact me anytime about workshops, teaching programmes or other projects.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><strong>E-mail:</strong>info@rossanacaldarera.com<br><strong>Phone:</strong>123456789</p>
         <img src="images/rosa2.png" alt="rossana photo">
     </div>
-<script src="shared.js"></script>
-<script src="frontpage.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/frontpage.js"></script>
 
 </body>
 

@@ -4,18 +4,33 @@
 
     <meta charset="UTF-8">
     <title>Rossana Caldarera</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/Logo">
 
 </head>
 <body>
-    <nav>
+   <header>
+    <!-- NAVIGATION FOR DESKTOP-->
+    <nav id="frontpageNav">
+                <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
                 <a><img src="images/" alt="logo rossana"></a>
-                <a href="index.html" id="nav1">Home</a>
-                <a href="about.html" id="nav2">About</a>
+                <a href="about.html" id="nav1">About me</a>
+                <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
+                <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
 
     </nav>
+
+    <!-- BURGER NAVIGATION FOR MOBILE-->
+
+    <div class="overlay hidden">
+                <a href="" id="closeMenu" >&times;</a>
+                <a href="about.html" id="nav1">About me</a>
+                <a href="teaching.html" id="nav2">Teaching</a>
+                <a href="contact.html" id="nav3">Contact</a>
+    </div>
+
+    </header>
     <h1>Teaching</h1>
 
     <div id="myMission">
@@ -55,7 +70,7 @@
                 <a href=""><img src="images/" alt="instagram icon"></a>
 
 </footer>
-
+<script src="js/shared.js"></script>
 
 </body>
 </html>

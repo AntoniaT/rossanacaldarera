@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 body{
     box-sizing: border-box;
@@ -67,7 +68,7 @@ a:visited{
     padding: 0;
     margin: 0;
 }
-#whoIam{
+whoIamContainer{
     background-color: #fff;
     border-radius: 50px 0px 0px 50px;
     display: flex;
@@ -76,13 +77,38 @@ a:visited{
 }
 #career{
     background-color: #E9C13B;
+    width: 100vw;
+    height: auto;
 }
-
+#careerTitle{
+    font-family: "Old Standard TT", serif;
+    font-size: 40px;
+    color: #fff;
+}
+#careerMoreButton{
+    text-transform: capitalize;
+    color: #000;
+}
 /* here  ends the code for the frontpage mobile */
+
+/* DESKTOP VERSION */
+
 @media only screen and (min-width: 800px){
+
 #teaching{
     display: grid;
     grid-template-rows: 2.5fr 1fr;
     grid-template-columns: 2fr 0.5fr 2fr;
+}
+#career{
+    display: flex;
+}
+
+#careerTitle{
+grid-area:
+    }
+#careerMoreButton{
+    text-transform: capitalize;
+    color: #000;
 }
 }
