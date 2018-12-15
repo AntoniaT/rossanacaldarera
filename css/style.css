@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: #000;
+}
+a:visited{
+    color: #000;
+
+}
+#frontpage{
+    background-color: #281B1C;
+}
+/* FRONTPAGE MOBILE */
+
+#frontpageImg{
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 200px;
+}
+#fontpageTitle{
+    color: #fff;
+    text-transform: uppercase;
+}
+#frontpageNav{
+    background-color: #281B1C;
+}
+#burgerMenu{
+    width: 8em;
+    float: right;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #E5EAF0;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 100px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    text-align: center;
+
+ }
+.overlay a{
+    display: block;
+    margin: 3em;
+}
+.hidden{
+        display: none;
+}
+#teaching{
+    border-radius: 50px 0px 50px 0px;
+    background-color: #E5EAF0;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+#whoIam{
+    background-color: #fff;
+    border-radius: 50px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+#career{
+    background-color: #E9C13B;
+}
+
+/* here  ends the code for the frontpage mobile */
+@media only screen and (min-width: 800px){
+#teaching{
+    display: grid;
+    grid-template-rows: 2.5fr 1fr;
+    grid-template-columns: 2fr 0.5fr 2fr;
+}
+}
