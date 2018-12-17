@@ -37,7 +37,10 @@ a:visited{
     width: 14em;
 }
 /* FRONTPAGE MOBILE */
-header{
+#frontpageNav{
+    visibility: hidden;
+}
+#headerFrontpage{
     background-image: url("../images/frontpage2.png");
     background-size: cover;
     background-position: center;
@@ -61,6 +64,7 @@ header{
 #burgerMenu{
     width: 8em;
     float: right;
+    padding: 2em;
 }
 .overlay{
     height: 100%;
@@ -101,6 +105,8 @@ header{
   /*  min-width: 100%;*/
     margin-top: 100px;
     margin-bottom: 0;
+    padding: 4em;
+
 }
 #whoiamTitle{
     font-family: "Old Standard TT", serif;
@@ -149,11 +155,59 @@ header{
 }
 /* here  ends the code for the frontpage mobile */
 
+/* SUBPAGES about, teaching and contact GENERAL CSS */
+.subpagesHeader{
+    background-color: #281B1C;
+
+}
+.subpagesTitle{
+    background-color: #281B1C;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+footer{
+    background-color: #E5EAF0;
+    height: 4em;
+    display: flex;
+    justify-content:center;
+    text-transform: uppercase;
+}
+.footerLinks a{
+    margin: 1em;
+}
+/* ABOUT PAGE SPECIFIC*/
+
+/* MY STORY SECTION in ABOUT PAGE */
+#myStoryBackgrd{
+    background-color: #E5EAF0;
+}
+/* PERFORMANCE CAREER SECTION in ABOUT PAGE */
+
+/* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
+#performanceMediaBackgrd{
+    background-color: #281B1C;
+}
+/* here  ends the code for the aboutpage mobile */
+
+/* TEACHING PAGE SPECIFIC */
+#myMissionBackgrd{
+    background-color: #E5EAF0;
+}
+#classBackgrd{
+    border-radius: 0px 100px 0px 0px;
+}
+#testimonialBackgrd{
+    background-color: #E9C13B;
+}
 /* DESKTOP VERSION START */
 
 @media only screen and (min-width: 800px) {
-
+#burgerMenu{
+    visibility: hidden;
+    }
 #frontpageNav{
+    visibility:visible;
     margin-top: -50px;
     margin-bottom: -200px;
     padding: 3em;
@@ -262,5 +316,20 @@ header{
     width: 30vw;
     margin-left: 4em;
     margin-top: 8em;
+    }
+/* TEACHING SUBPAGE */
+#testimonialWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 600px;
+    }
+#testimonialImg{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fff;
+    }
+#testimonialP{
+    grid-area: 1 / 2 / 2 / 3;
+
     }
 }

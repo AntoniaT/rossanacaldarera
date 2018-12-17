@@ -9,7 +9,7 @@
 
 </head>
 <body>
-   <header>
+   <header class="subpagesHeader">
     <!-- NAVIGATION FOR DESKTOP-->
     <nav id="frontpageNav">
                 <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
@@ -17,7 +17,6 @@
                 <a href="about.html" id="nav1">About me</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
-                <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
 
     </nav>
 
@@ -31,38 +30,63 @@
     </div>
 
     </header>
-    <h1>Teaching</h1>
+    <h1 class="subpagesTitle">Teaching</h1>
 
-    <div id="myMission">
-        <h2>My mission</h2>
-        <p>I've had the chance to not only have teachers, but real mentors who pushed me further every day in the studio, taking the time to get to know me and understand where I wanted to go.This is the reason why I feel that being a teacher is so much more that simply teaching a technique or a dance combination. It’s a real commitment. It’s about transmitting, communicating, sharing, but also listening and understanding. This is my vision and my personal goal as a teacher. I always thought you can see a good teacher from his work inside the studio, but even more outside. I hope to have the chance to give back what I received as a student, which completely changed my life.</p>
-        <p>Connect with yourself</p>
-        <p>Feel free to explore</p>
-        <p>Know your own body</p>
+<!-- TEMPLATE FOR MY MISSION SECTION-->
 
-    </div>
+    <div id="parent1"></div>
 
-    <div id="testimonials">
-        <h2>Testimonials</h2>
-        <img src="images/" alt="testimonial photo">
-        <p>Rossana is a one-of-a-kind teacher. The one you´ll remember till the rest of your life. She makes you work hard and feel absolutely free at the same time. She is so positive and energetic, it´s infectious. Her genuine care about her students goes way beyond what most teachers are providing.</p>
+    <template id="teachingTemplate1">
+        <div id="myMissionBackgrd">
+        <article id="myMissionWrapper">
+            <h2 id="myMissionTitle">TITLE</h2>
+            <p id="myMissionP">LONG TEXT</p>
+            <img id="myMissionImg" src="" alt="">
+        </article>
+        </div>
+    </template>
 
-        <img src="images/" alt="testimonial photo">
-        <p>Rossana is a one-of-a-kind teacher. The one you´ll remember till the rest of your life. She makes you work hard and feel absolutely free at the same time. She is so positive and energetic, it´s infectious. Her genuine care about her students goes way beyond what most teachers are providing.</p>
+<!-- TEMPLATE FOR CLASS DESCRIPTION SECTION-->
 
-        <img src="images/" alt="testimonial photo">
-        <p>Rossana is a one-of-a-kind teacher. The one you´ll remember till the rest of your life. She makes you work hard and feel absolutely free at the same time. She is so positive and energetic, it´s infectious. Her genuine care about her students goes way beyond what most teachers are providing.</p>
+    <div id="parent2"></div>
 
-    </div>
-    <div id="classMedia">
-        <h2>Class Media</h2>
-        <img src="images/" alt="performance photo">
-        <img src="images/" alt="performance photo">
-        <img src="images/" alt="performance photo">
-        <img src="images/" alt="performance photo">
-        <img src="images/" alt="performance photo">
-    </div>
-<footer>
+    <template id="teachingTemplate2">
+        <div id="classBackgrd">
+        <article id="classWrapper">
+            <h2 id="classTitle">TITLE</h2>
+            <p id="classP">LONG TEXT</p>
+            <img id="classImg" src="" alt="">
+        </article>
+        </div>
+    </template>
+<!-- TEMPLATE FOR TESTIMONIALS SECTION-->
+
+    <div id="parent3"></div>
+
+    <template id="teachingTemplate3">
+        <div id="testimonialBackgrd">
+        <article id="testimonialWrapper">
+            <h2 id="testimonialTitle">TITLE</h2>
+            <p id="testimonialP">LONG TEXT</p>
+            <img id="testimonialImg" src="" alt="">
+        </article>
+        </div>
+    </template>
+<!-- TEMPLATE FOR CLASS MEDIA SECTION-->
+
+    <div id="parent4"></div>
+
+    <template id="teachingTemplate4">
+        <div id="classMediaBackgrd">
+        <article id="classMediaWrapper">
+            <h2 id="classMediaTitle">TITLE</h2>
+            <img id="classMediaImg" src="" alt="">
+        </article>
+        </div>
+    </template>
+
+<!-- FOOTER -->
+<footer class="footerLinks">
                 <a href="index.html" id="nav1">Home</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
@@ -71,6 +95,7 @@
 
 </footer>
 <script src="js/shared.js"></script>
+<script src="js/teaching.js"></script>
 
 </body>
 </html>
