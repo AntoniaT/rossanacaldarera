@@ -16,17 +16,17 @@
     <nav id="frontpageNav">
                 <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
                 <a><img src="images/" alt="logo rossana"></a>
-                <a href="about.html" id="nav1">About me</a>
-                <a href="teaching.html" id="nav2">Teaching</a>
-                <a href="contact.html" id="nav3">Contact</a>
-                <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
+                <a id="aboutNav" href="about.html">About me</a>
+                <a id="teachingNav" href="teaching.html">Teaching</a>
+                <a id="contactNav" href="contact.html">Contact</a>
 
     </nav>
+    <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
 
     <!-- BURGER NAVIGATION FOR MOBILE-->
 
     <div class="overlay hidden">
-                <a href="" id="closeMenu" >&times;</a>
+                <a href="" id="closeMenu" onclick="closeMenu()">&times;</a>
                 <a href="about.html" id="nav1">About me</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
@@ -34,51 +34,68 @@
 
     </header>
 
-    <!--TEMPLATE to insert data from Frontpage Post in WP -->
+    <!--TEMPLATES to insert data from Frontpage Post in WP -->
+    <div id="parent1"></div>
 
-    <template id="frontpageTemplate">
-        <article>
-                    <p id="sectionContent">LONG TEXT</p>
-                    <img id="sectionImg" src="" alt="">
+
+    <!-- TEMPLATE FOR WHO I AM SECTION-->
+
+    <template id="frontpageTemplate1">
+       <div id="whoiamBackgrd">
+        <article id="whoIamWrapper">
+                   <h2 id="whoiamTitle">WHO I AM TITLE</h2>
+                    <p id="whoiamP">LONG TEXT</p>
+                    <img id="whoiamImg" src="" alt="">
+
+        </article>
+       </div>
+    </template>
+
+   <!-- TEMPLATE FOR CAREER SECTION-->
+        <div id="parent2"></div>
+
+    <template id="frontpageTemplate2">
+                <article id="careerWrapper">
+                    <h2 id="careerTitle">CAREER TITLE</h2>
+                    <p id="careerP">LONG TEXT</p>
+                    <img id="careerImg" src="" alt="">
 
         </article>
     </template>
 
-    <!--END OF TEMPLATE -->
+    <!-- TEMPLATE FOR TEACHING SECTION-->
+    <div id="parent3"></div>
 
-    <div id="whoIamContainer">
-        <h2>Who I am</h2>
-        <!-- Append template from WP "Who I am" Post here -->
-        <a><div></div>Read more</a>
-    </div>
+    <template id="frontpageTemplate3">
+        <article id="teachingWrapper">
+                    <h2 id="teachingTitle">TEACHING TITLE</h2>
+                    <p id="teachingP">LONG TEXT</p>
+                    <img id="teachingImg1" src="" alt="">
+                    <img id="teachingImg2" src="" alt="">
+                    <img id="teachingImg3" src="" alt="">
+                    <img id="teachingImg4" src="" alt="">
+        </article>
 
-    <div id="career">
-        <h2 id="careerTitle">My Career</h2>
-        <p id="careerP">My professional dance journey started at the age of 18, when I participated in the dance competition “Danza and State” and won a scholarship to study at the Academy Balletto di Toscana-Opus Ballet in Florence, Italy.<br>I studied there for 2 years, becoming a dance member of the Junior BDT and the Opus Ballet Company. I got the chance to work with choreographers as Mauro Bigonzetti, Fabrizio Monteverde and Daniel Tinazzi.<br>In 2003 I left Italy for France where I met Dominique Lesdema. With him I refined my professional dance education and joined his modern company “Kinetic”.<br>Since then, I've also had the privilege to work with many other inspiring choreographers in France and the Netherlands.
-        </p>
-        <a id="careerMoreButton"><div></div>Read more</a>
-        <img id="careerImg" src="images/rosa2.png" alt="career photo rossana">
+    </template>
+
+    <!-- TEMPLATE FOR CONTACT SECTION-->
+    <div id="parent4"></div>
+
+    <template id="frontpageTemplate4">
+                <article id="contactWrapper">
+                    <h2 id="contactTitle">CAREER TITLE</h2>
+                    <p id="contactP">LONG TEXT</p>
+                    <img id="contactImg" src="" alt="">
+
+        </article>
+    </template>
 
 
-    </div>
-    <div id="teaching">
-        <h2>My Teaching Mission</h2>
-        <p>I've had the chance to not only have teachers, but real mentors who pushed me further every day in the studio, taking the time to get to know me and understand where I wanted to go.<br>This is the reason why I feel that being a teacher is so much more than simply teaching a technique or a dance combination. It’s a real commitment.<br>It’s about transmitting, communicating, sharing, but also listening and understanding. This is my vision and my personal goal as a teacher.
-        </p>
-        <a><div></div>Read more</a>
-        <a><div></div>See more</a>
-        <img src="images/rosa2.png" alt="teaching video">
-        <img src="images/rosa2.png" alt="teaching video">
-        <img src="images/rosa2.png" alt="teaching video">
-    </div>
+    <!--END OF TEMPLATES -->
 
-    <div id="contact">
-        <h2>Let's get in touch!</h2>
-        <p>I'm always open to (international) collaborations, so contact me anytime about workshops, teaching programmes or other projects.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><strong>E-mail:</strong>info@rossanacaldarera.com<br><strong>Phone:</strong>123456789</p>
-        <img src="images/rosa2.png" alt="rossana photo">
-    </div>
+
 <script src="js/shared.js"></script>
-<script src="js/frontpage.js"></script>
+<script src="js/frontpage-test2.js"></script>
 
 </body>
 

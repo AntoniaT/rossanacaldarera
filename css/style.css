@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
+
 body{
-    box-sizing: border-box;
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
@@ -15,14 +15,34 @@ a:active{
 }
 a:visited{
     color: #000;
-
 }
 #frontpage{
-    background-color: #281B1C;
+}
+/* NAVIGATION */
+#aboutNav{
+    background-color: #DFE6EE;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 10em;
+}
+#teachingNav{
+    background-color: #31A7BE;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 10em;
+}
+#contactNav{
+    background-color: #EBC239;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 10em;
 }
 /* FRONTPAGE MOBILE */
-
+header{
+    background-color: #281B1C;
+}
 #frontpageImg{
+    width: 100%;
     top: 0;
     left: 0;
     border-bottom-left-radius: 200px;
@@ -30,6 +50,10 @@ a:visited{
 #fontpageTitle{
     color: #fff;
     text-transform: uppercase;
+    padding: 3em;
+    width: 100vw;
+    background-color: #281B1C;
+    margin-bottom: 3em;
 }
 #frontpageNav{
     background-color: #281B1C;
@@ -60,54 +84,145 @@ a:visited{
 .hidden{
         display: none;
 }
-#teaching{
-    border-radius: 50px 0px 50px 0px;
-    background-color: #E5EAF0;
-    width: 100vw;
-    height: auto;
-    padding: 0;
+
+#parent1, #parent2, #parent3, #parent4{
     margin: 0;
 }
-whoIamContainer{
+/* WHO I AM SECTION*/
+#whoiamBackgrd{
+    background-color: #E9C13B;
+}
+#whoIamWrapper{
     background-color: #fff;
-    border-radius: 50px 0px 0px 50px;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+    border-radius: 80px 0px 0px 80px;
+    min-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
-#career{
+#whoiamTitle{
+    font-family: "Old Standard TT", serif;
+    font-size: 40px;
+    color: #E9C13B;
+}
+/* CAREER SECTION*/
+
+#careerWrapper{
     background-color: #E9C13B;
     width: 100vw;
     height: auto;
+    margin: 0;
+    padding: 4em;
 }
 #careerTitle{
     font-family: "Old Standard TT", serif;
     font-size: 40px;
     color: #fff;
 }
-#careerMoreButton{
-    text-transform: capitalize;
-    color: #000;
+/* TEACHING SECTION*/
+
+#teachingWrapper{
+    border-radius: 100px 0px 100px 0px;
+    background-color: #E5EAF0;
+    margin: -1.5em;
+    width: 100vw;
+    padding: 4em;
+}
+#teachingTitle{
+    font-family: "Old Standard TT", serif;
+    font-size: 40px;
+}
+/* CONTACT SECTION*/
+
+#contactWrapper{
+    background-color: #281B1C;
+    margin: 0;
+    width: 100vw;
+    padding: 4em;
+
+}
+#contactTitle{
+    font-family: 'Old Standard TT', serif;
+    color: #E9C13B;
+    font-size: 40px;
+}
+#contactP{
+    color: #fff;
 }
 /* here  ends the code for the frontpage mobile */
 
-/* DESKTOP VERSION */
+/* DESKTOP VERSION START */
 
 @media only screen and (min-width: 800px){
 
-#teaching{
+#whoIamWrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 4em;
+
+    }
+#whoiamTitle{
+    margin-right: 4em;
+    grid-area: 1 / 2 / 2 / 3;
+
+    }
+#whoiamImg{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 30vw;
+    margin: 2em;
+    }
+#whoiamP{
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 4em;
+    width: 30vw;
+    }
+#teachingWrapper{
     display: grid;
     grid-template-rows: 2.5fr 1fr;
     grid-template-columns: 2fr 0.5fr 2fr;
 }
-#career{
-    display: flex;
+#teachingImg1{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 40vw;
+    margin: 2em;
+    }
+#teachingTitle{
+    grid-area: 1 / 3 / 2 / 4;
+
+    }
+#teachingP{
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 4em;
+    width: 30vw;
+    }
+#careerWrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 4em;
 }
 
 #careerTitle{
-grid-area:
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 4em;
     }
+#careerImg{
+    grid-area: 1/ 2/ 2 / 3;
+    margin: 2em;
+    width: 30vw;
+    }
+#careerP{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 30vw;
+    margin-left: 4em;
+    margin-top: 8em;
+}
 #careerMoreButton{
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 4em;
+}
+
+#careerMoreButton{
+    grid-area: 1/ 1 / 2 / 2/;
     text-transform: capitalize;
     color: #000;
 }
