@@ -9,15 +9,14 @@
 
 </head>
 <body>
-   <header>
+   <header class="subpagesHeader">
     <!-- NAVIGATION FOR DESKTOP-->
-    <nav id="frontpageNav">
+    <nav id="subpagesNav">
                 <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
                 <a><img src="images/" alt="logo rossana"></a>
-                <a href="about.html" id="nav1">About me</a>
+                <a href="index.html" id="nav1">Home</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
-                <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
 
     </nav>
 
@@ -25,37 +24,60 @@
 
     <div class="overlay hidden">
                 <a href="" id="closeMenu" >&times;</a>
-                <a href="about.html" id="nav1">About me</a>
+                <a href="about.html" id="nav1">Home</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
     </div>
+    <h1 class="subpagesTitle">About me</h1>
 
     </header>
-    <h1>About me</h1>
+<!-- TEMPLATE FOR MY STORY SECTION-->
 
-    <div id="myStory">
-        <h2>My story</h2>
-        <p>I ‘ve always been an active kid. I constantly had the need to move; to run, to jump, to fall, to sing.. I tried many sports like swimming, basketball, running, but I always felt I was missing something.<br>When I was about 6 years old I tried my first dance class: Ballet. The result: I hated it! For me it was not "active" enough. But there was something I completely fell in love with : the music and the connection with it.<br>I did not come back for a full month, until I stumbled upon The Nutcracker while I was watching TV. I instinctively started dancing. I don't know how and which movements or style, but I just remember running to my parents saying :<br>'I want to dance!!'
-        </p>
-        <a><div></div>Read more</a>
+    <div id="parent1"></div>
+
+    <template id="aboutTemplate1">
+    <div id="myStoryBackgrd">
+       <article id="myStoryWrapper">
+        <h2 id="myStoryTitle">TITLE</h2>
+        <p id="myStoryP">LONG TEXT</p>
+        <img id="myStoryImg" src="" alt="">
+        </article>
     </div>
+</template>
 
-    <div id="performanceCareer">
-        <h2>Performance Career</h2>
-        <img src="images/" alt="performance photo">
-        <a><div></div>Read more</a>
+<!-- TEMPLATE FOR PERFORMANCE CAREER SECTION-->
+   <div id="parent2"></div>
 
+   <template id="aboutTemplate2">
+    <div id="performanceCareerBackgrd">
+       <article id="performanceCareerWrapper">
+        <h2 id="performanceCareerTitle">CAREER TITLE</h2>
+        <p id="performanceCareerP">LONG TEXT</p>
+        <img id="performanceCareerImg" src="images/" alt="performance photo">
+       </article>
 
     </div>
-    <div id="performanceMedia">
-        <h2>Performance Media</h2>
+    </template>
+<!-- TEMPLATE FOR PERFORMANCE MEDIA SECTION-->
+     <div id="parent3"></div>
+
+   <template id="aboutTemplate3">
+    <div id="performanceMediaBackgrd">
+       <article>
+        <h2 id="performanceMediaTitle">MEDIA TITLE</h2>
         <video></video>
 
         <img src="images/" alt="performance video">
         <img src="images/" alt="performance video">
         <img src="images/" alt="performance video">
+        </article>
     </div>
-<footer>
+    </template>
+
+
+<!-- FOOTER -->
+
+<footer class="footerLinks">
                 <a href="index.html" id="nav1">Home</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
@@ -64,6 +86,6 @@
 
 </footer>
 <script src="js/shared.js"></script>
-
+<script src="js/about.js"></script>
 </body>
 </html>
