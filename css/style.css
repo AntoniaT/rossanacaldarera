@@ -317,4 +317,19 @@ footer{
     margin-left: 4em;
     margin-top: 8em;
     }
+/* TEACHING SUBPAGE */
+#testimonialWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 600px;
+    }
+#testimonialImg{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fff;
+    }
+#testimonialP{
+    grid-area: 1 / 2 / 2 / 3;
+
+    }
 }
