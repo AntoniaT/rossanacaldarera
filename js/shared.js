@@ -7,7 +7,7 @@ burgerMenu.addEventListener("click", openMenu);
 function openMenu() {
     let openNav = document.querySelector(".overlay")
     openNav.classList.remove("hidden")
-    console.log("I work");
+    console.log("I am working");
 }
 
 function closeMenu (){
