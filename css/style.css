@@ -2,45 +2,64 @@
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 
-body{
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
+
+* {
+    box-sizing: border-box;
 }
-a{
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+
+}
+
+
+
+a {
     text-decoration: none;
 }
-a:link{
+
+a:link {
     color: #000;
 }
-a:visited{
+
+a:visited {
     color: #000;
 }
 
 /* NAVIGATION */
-#aboutNav{
+#aboutNav {
     background-color: #DFE6EE;
     padding: 0.5em;
     text-transform: uppercase;
     width: 14em;
 }
-#teachingNav{
+
+#teachingNav {
     background-color: #31A7BE;
     padding: 0.5em;
     text-transform: uppercase;
     width: 14em;
 }
-#contactNav{
+
+#contactNav {
     background-color: #EBC239;
     padding: 0.5em;
     text-transform: uppercase;
     width: 14em;
 }
+
+
+
 /* FRONTPAGE MOBILE */
-#frontpageNav{
+#frontpageNav {
     visibility: hidden;
 }
-#headerFrontpage{
+
+#headerFrontpage {
     background-image: url("../images/frontpage2.png");
     background-size: cover;
     background-position: center;
@@ -48,25 +67,27 @@ a:visited{
     position: relative;
 }
 
-#brownWrapper{
- background-color: #281B1C;
+#brownWrapper {
+    background-color: #281B1C;
 }
-#fontpageTitle{
+
+#fontpageTitle {
     color: #fff;
     text-transform: uppercase;
     text-align: right;
     padding: 2em;
     background-color: #281B1C;
     margin-bottom: 3em;
-    margin-top:18em;
+    margin-top: 18em;
 }
 
-#burgerMenu{
+#burgerMenu {
     width: 8em;
     float: right;
     padding: 2em;
 }
-.overlay{
+
+.overlay {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -80,256 +101,312 @@ a:visited{
     overflow-y: hidden;
     text-align: center;
 
- }
-.overlay a{
+}
+
+.overlay a {
     display: block;
     margin: 3em;
 }
-.hidden{
-        display: none;
+
+.hidden {
+    display: none;
 }
 
-#parent1, #parent2, #parent3, #parent4{
+#parent1,
+#parent2,
+#parent3,
+#parent4 {
     margin: 0;
 }
 
 /* WHO I AM SECTION*/
 
-#whoiamBackgrd{
+#whoiamBackgrd {
     margin-top: -100px;
     background-color: #E9C13B;
 }
-#whoIamWrapper{
+
+#whoIamWrapper {
     background-color: #fff;
     border-radius: 80px 0px 0px 80px;
-  /*  min-width: 100%;*/
+    /*  min-width: 100%;*/
     margin-top: 100px;
     margin-bottom: 0;
     padding: 4em;
 
 }
-#whoiamTitle{
+
+#whoiamTitle {
     font-family: "Old Standard TT", serif;
     font-size: 40px;
     color: #E9C13B;
 }
+
 /* CAREER SECTION*/
 
-#careerWrapper{
+#careerWrapper {
     background-color: #E9C13B;
     height: auto;
     margin: 0;
     padding: 4em;
 }
-#careerTitle{
+
+#careerTitle {
     font-family: "Old Standard TT", serif;
     font-size: 40px;
     color: #fff;
 }
+
 /* TEACHING SECTION*/
 
-#teachingWrapper{
+#teachingWrapper {
     border-radius: 100px 0px 100px 0px;
     background-color: #E5EAF0;
     padding: 4em;
 }
-#teachingTitle{
+
+#teachingTitle {
     font-family: "Old Standard TT", serif;
     font-size: 40px;
 }
+
 /* CONTACT SECTION*/
 
-#contactWrapper{
+#contactWrapper {
     background-color: #281B1C;
     margin-top: -2em;
     padding: 4em;
 
 }
-#contactTitle{
+
+#contactTitle {
     font-family: 'Old Standard TT', serif;
     color: #E9C13B;
     font-size: 40px;
 }
-#contactP{
+
+#contactP {
     color: #fff;
 }
+
 /* here  ends the code for the frontpage mobile */
 
+
+
+
+
 /* SUBPAGES about, teaching and contact GENERAL CSS */
-.subpagesHeader{
+.subpagesHeader {
     background-color: #281B1C;
 
 }
-.subpagesTitle{
+
+.subpagesTitle {
     background-color: #281B1C;
     color: #fff;
     font-size: 40px;
     text-transform: uppercase;
 }
-footer{
+
+footer {
     background-color: #E5EAF0;
     height: 4em;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     text-transform: uppercase;
 }
-.footerLinks a{
+
+.footerLinks a {
     margin: 1em;
 }
+
 /* ABOUT PAGE SPECIFIC*/
 
 /* MY STORY SECTION in ABOUT PAGE */
-#myStoryBackgrd{
+#myStoryBackgrd {
     background-color: #E5EAF0;
 }
+
 /* PERFORMANCE CAREER SECTION in ABOUT PAGE */
 
 /* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
-#performanceMediaBackgrd{
+#performanceMediaBackgrd {
     background-color: #281B1C;
 }
+
 /* here  ends the code for the aboutpage mobile */
 
 /* TEACHING PAGE SPECIFIC */
-#myMissionBackgrd{
+#myMissionBackgrd {
     background-color: #E5EAF0;
 }
-#classBackgrd{
+
+#classBackgrd {
     border-radius: 0px 100px 0px 0px;
 }
-#testimonialBackgrd{
+
+#testimonialBackgrd {
     background-color: #E9C13B;
 }
+
+
+
+
+
 /* DESKTOP VERSION START */
 
 @media only screen and (min-width: 800px) {
-#burgerMenu{
-    visibility: hidden;
+    #burgerMenu {
+        visibility: hidden;
     }
-#frontpageNav{
-    visibility:visible;
-    margin-top: -50px;
-    margin-bottom: -200px;
-    padding: 3em;
-    z-index: 200;
-}
-#frontpageNav a{
-    display: block;
-    text-align: center;
-    margin: 1em;
-}
-#frontpage{
-    z-index: 2;
-}
-#whoIamWrapper{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 4em;
+
+    #frontpageNav {
+        visibility: visible;
+        margin-top: -50px;
+        margin-bottom: -200px;
+        padding: 3em;
+        z-index: 200;
+    }
+
+    #frontpageNav a {
+        display: block;
+        text-align: center;
+        margin: 1em;
+    }
+
+    #frontpage {
+        z-index: 2;
+    }
+
+    #whoIamWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 4em;
 
     }
-#whoiamTitle{
-    margin-right: 4em;
-    grid-area: 1 / 2 / 2 / 3;
+
+    #whoiamTitle {
+        margin-right: 4em;
+        grid-area: 1 / 2 / 2 / 3;
 
     }
-#whoiamImg{
-    grid-area: 1 / 1 / 2 / 2;
-    width: 30vw;
-    margin: 2em;
+
+    #whoiamImg {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 30vw;
+        margin: 2em;
     }
-#whoiamP{
-    grid-area: 1 / 2 / 2 / 3;
-    margin-top: 4em;
-    width: 30vw;
-    margin-top: 8em;
+
+    #whoiamP {
+        grid-area: 1 / 2 / 2 / 3;
+        margin-top: 4em;
+        width: 30vw;
+        margin-top: 8em;
 
     }
-#teachingWrapper{
-    display: grid;
-    grid-template-rows: 2.5fr 1fr;
-    grid-template-columns: 2fr 0.5fr 2fr;
-}
-#teachingImg1{
-    grid-area: 1 / 1 / 2 / 2;
-    width: 40vw;
-    margin: 2em;
+
+    #teachingWrapper {
+        display: grid;
+        grid-template-rows: 2.5fr 1fr;
+        grid-template-columns: 2fr 0.5fr 2fr;
     }
-#teachingTitle{
-    grid-area: 1 / 3 / 2 / 4;
+
+    #teachingImg1 {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 40vw;
+        margin: 2em;
+    }
+
+    #teachingTitle {
+        grid-area: 1 / 3 / 2 / 4;
 
     }
-#teachingP{
-    grid-area: 1 / 3 / 2 / 4;
-    margin-top: 4em;
-    width: 30vw;
-    margin-top: 8em;
+
+    #teachingP {
+        grid-area: 1 / 3 / 2 / 4;
+        margin-top: 4em;
+        width: 30vw;
+        margin-top: 8em;
 
     }
-#careerWrapper{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 4em;
-}
 
-#careerTitle{
-    grid-area: 1 / 1 / 2 / 2;
-    margin-left: 4em;
+    #careerWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 4em;
     }
-#careerImg{
-    grid-area: 1/ 2/ 2 / 3;
-    margin: 2em;
-    width: 30vw;
-    }
-#careerP{
-    grid-area: 1 / 1 / 2 / 2;
-    width: 30vw;
-    margin-left: 4em;
-    margin-top: 8em;
-}
-#careerMoreButton{
-    text-transform: capitalize;
-    color: #000;
-    margin-left: 4em;
-}
 
-#careerMoreButton{
-    grid-area: 1/ 1 / 2 / 2/;
-    text-transform: capitalize;
-    color: #000;
-}
-#contactWrapper{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 4em;
+    #careerTitle {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 4em;
     }
-#contactImg{
-    grid-area: 1/ 2/ 2 / 3;
-    margin: 2em;
-    width: 30vw;
+
+    #careerImg {
+        grid-area: 1/ 2/ 2 / 3;
+        margin: 2em;
+        width: 30vw;
     }
-#contactTitle{
-    grid-area: 1 / 1 / 2 / 2;
-    margin-left: 4em;
+
+    #careerP {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 30vw;
+        margin-left: 4em;
+        margin-top: 8em;
     }
-#contactP{
-    grid-area: 1 / 1 / 2 / 2;
-    width: 30vw;
-    margin-left: 4em;
-    margin-top: 8em;
+
+    #careerMoreButton {
+        text-transform: capitalize;
+        color: #000;
+        margin-left: 4em;
     }
-/* TEACHING SUBPAGE */
-#testimonialWrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    height: 600px;
+
+    #careerMoreButton {
+        grid-area: 1/ 1 / 2 / 2/;
+        text-transform: capitalize;
+        color: #000;
     }
-#testimonialImg{
-    grid-area: 1 / 2 / 2 / 3;
-    background-color: #fff;
+
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 4em;
     }
-#testimonialP{
-    grid-area: 1 / 2 / 2 / 3;
+
+    #contactImg {
+        grid-area: 1/ 2/ 2 / 3;
+        margin: 2em;
+        width: 30vw;
+    }
+
+    #contactTitle {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 4em;
+    }
+
+    #contactP {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 30vw;
+        margin-left: 4em;
+        margin-top: 8em;
+    }
+
+
+
+    /* TEACHING SUBPAGE */
+    #testimonialWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        height: 600px;
+    }
+
+    #testimonialImg {
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: #fff;
+    }
+
+    #testimonialP {
+        grid-area: 1 / 2 / 2 / 3;
 
     }
 }
