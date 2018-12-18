@@ -31,6 +31,13 @@ a:visited {
 }
 
 /* NAVIGATION */
+
+#homeNav{
+    background-color: #DFE6EE;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 14em;
+}
 #aboutNav {
     background-color: #DFE6EE;
     padding: 0.5em;
@@ -223,29 +230,31 @@ footer {
 /* ABOUT PAGE SPECIFIC*/
 
 /* MY STORY SECTION in ABOUT PAGE */
-#myStoryBackgrd {
+div#biography{
+
     background-color: #E5EAF0;
 }
 
 /* PERFORMANCE CAREER SECTION in ABOUT PAGE */
 
 /* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
-#performanceMediaBackgrd {
+div#performance-media{
+
+
     background-color: #281B1C;
 }
 
 /* here  ends the code for the aboutpage mobile */
 
 /* TEACHING PAGE SPECIFIC */
-#myMissionBackgrd {
+
+div#my-mission{
     background-color: #E5EAF0;
 }
-
-#classBackgrd {
+div#class-description{
     border-radius: 0px 100px 0px 0px;
 }
-
-#testimonialBackgrd {
+div#testimonials{
     background-color: #E9C13B;
 }
 
@@ -268,7 +277,29 @@ footer {
         z-index: 200;
     }
 
-    #frontpageNav a {
+#frontpageNav{
+    visibility:visible;
+    margin-top: -50px;
+    margin-bottom: -200px;
+    padding: 3em;
+    z-index: 200;
+}
+#frontpageNav a{
+    display: block;
+    text-align: center;
+    margin: 1em;
+}
+#frontpage{
+    z-index: 2;
+}
+/* FRONTPAGE SECTIONS */
+
+#whoIamWrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 4em;
+
+#frontpageNav a {
         display: block;
         text-align: center;
         margin: 1em;
@@ -346,6 +377,21 @@ footer {
         margin: 2em;
         width: 30vw;
     }
+
+/* TEACHING SUBPAGE */
+div#testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 600px;
+    }
+img#testimonials{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fff;
+    }
+p#testimonials{
+    grid-area: 1 / 2 / 2 / 3;
+
 
     #careerP {
         grid-area: 1 / 1 / 2 / 2;
