@@ -18,6 +18,12 @@ a:visited{
 }
 
 /* NAVIGATION */
+#homeNav{
+    background-color: #DFE6EE;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 14em;
+}
 #aboutNav{
     background-color: #DFE6EE;
     padding: 0.5em;
@@ -179,25 +185,25 @@ footer{
 /* ABOUT PAGE SPECIFIC*/
 
 /* MY STORY SECTION in ABOUT PAGE */
-#myStoryBackgrd{
+div#biography{
     background-color: #E5EAF0;
 }
 /* PERFORMANCE CAREER SECTION in ABOUT PAGE */
 
 /* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
-#performanceMediaBackgrd{
+div#performance-media{
     background-color: #281B1C;
 }
 /* here  ends the code for the aboutpage mobile */
 
 /* TEACHING PAGE SPECIFIC */
-#myMissionBackgrd{
+div#my-mission{
     background-color: #E5EAF0;
 }
-#classBackgrd{
+div#class-description{
     border-radius: 0px 100px 0px 0px;
 }
-#testimonialBackgrd{
+div#testimonials{
     background-color: #E9C13B;
 }
 /* DESKTOP VERSION START */
@@ -221,6 +227,8 @@ footer{
 #frontpage{
     z-index: 2;
 }
+/* FRONTPAGE SECTIONS */
+
 #whoIamWrapper{
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -318,17 +326,17 @@ footer{
     margin-top: 8em;
     }
 /* TEACHING SUBPAGE */
-#testimonialWrapper{
+div#testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     height: 600px;
     }
-#testimonialImg{
+img#testimonials{
     grid-area: 1 / 2 / 2 / 3;
     background-color: #fff;
     }
-#testimonialP{
+p#testimonials{
     grid-area: 1 / 2 / 2 / 3;
 
     }
