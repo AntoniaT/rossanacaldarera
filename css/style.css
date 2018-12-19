@@ -16,7 +16,8 @@
 
 html,
 body {
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     margin: 0;
     font-family: "Lato", sans-serif;
     padding: 0;
@@ -397,16 +398,22 @@ div#class-description img{
 div#class-description p{
     width: 80vw;
 }
-div#83.{
+div#testimonial{
     background-color: #E9C13B;
 }
 
-div#83 h2{
+div#testimonial h2{
     text-align: center;
     font-size: 40px;
     font-family: 'Old Standard TT', serif;
+    padding: 1em;
 }
-
+div#testimonial img{
+    width: 90vw;
+    margin: auto;
+    display: block;
+    margin-top: 5em;
+    }
 div#class-media h2{
     text-align: center;
     font-size: 40px;
@@ -625,7 +632,7 @@ p#testimonials{
     }
 
 #careerMoreButton {
-        grid-area: 1/ 1 / 2 / 2/;
+        grid-area: 1/ 1 / 2 / 2;
         text-transform: capitalize;
         color: #000;
     }
@@ -699,23 +706,13 @@ div#my-mission img{
     }
 
 
-div#83.teachingDivs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    height: 600px;
-    }
-div#testimonials h2{
-    grid-area: 1 / 2 / 2 / 3;
+
+div#testimonial {
+    background-color:#EBC239;
+    height: 800px;
 
     }
-div#testimonials.teachingDivs img {
-    grid-area: 1 / 2 / 2 / 3;
-    width: 30vw;
-    }
 
-div#83.teachingDivs img {
-    width: 80vw;
-    }
+
 
 }
