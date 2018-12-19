@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector("#burgerMenu");
-//const closeNav = document.querySelector(".closeMenu");
+const closeNav = document.querySelector("#closeMenu");
 
 burgerMenu.addEventListener("click", openMenu);
 
