@@ -120,8 +120,8 @@ a.whoIntro{
 #burgerMenu {
     position: absolute;
     width: 8em;
-    float: right;
     padding: 2em;
+    margin-top: 600px;
 }
 
 .overlay {
@@ -388,7 +388,7 @@ div#class-media h2{
 
 /* DESKTOP VERSION START */
 
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
     #burgerMenu {
         visibility: hidden;
     }
@@ -479,7 +479,7 @@ div#my-teaching-mission-2 p {
     margin: 20px 0;
     flex-flow: row wrap;
 }
-    }
+
 div#my-teaching-mission-2 img{
     grid-area: 1 / 1 / 2 / 2;
     margin-left: 4em;
@@ -505,9 +505,7 @@ div#my-teaching-mission-2 p img{
 #my-teaching-mission-2 p figure{
       grid-area: 2 / 1 / 3 / 4;
     }
-#my-teaching-mission-2 p ul li{
 
-    }
 div#my-career-2 {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -604,6 +602,7 @@ p#testimonials{
 #subpagesNav{
     visibility: visible;
     margin-top: 3em;
+    margin-right: 3em;
 }
 div#performance-media{
     display: grid;
