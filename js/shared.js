@@ -1,18 +1,16 @@
-const burgerMenu = document.querySelector("#burgerMenu");
-const closeNav = document.querySelector("#closeMenu");
-
-burgerMenu.addEventListener("click", openMenu);
+const menuBtn = document.querySelector(".menuBtn");
 
 
-function openMenu() {
-    let openNav = document.querySelector(".overlay")
-    openNav.classList.remove("hidden");
-    console.log("I am working");
+menuBtn.addEventListener("click", openNav);
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
 }
 
-function closeMenu (){
-    closeNav.classList.add("hidden");
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
+
 /*function openMenu() {
   document.getElementById("#myNav").style.height = "100%";
 }

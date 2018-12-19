@@ -5,7 +5,7 @@
 
  turquoise: #31A7BE;
  yellow: #EBC239;
- light blue: #DFE6EE;
+ light blue: #E5EAF0;
  dark brown: #281B1C;
 */
 
@@ -56,14 +56,14 @@ a.whoIntro{
 /* NAVIGATION */
 
 #homeNav{
-    background-color: #DFE6EE;
+    background-color: #E5EAF0;
     padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
     margin: 0.5em;
     width: 14em;
 }
 #aboutNav {
-    background-color: #DFE6EE;
+    background-color: #E5EAF0;
     padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
     margin: 0.5em;
@@ -97,7 +97,7 @@ a.whoIntro{
 }
 
 #headerFrontpage {
-    background-image: url("../images/frontpage2.png");
+    background-image: url("../images/heroimg-overlay.jpg");
     background-size: cover;
     background-position: center;
     border-bottom-left-radius: 200px;
@@ -118,37 +118,66 @@ a.whoIntro{
     margin-top: 18em;
 }
 
-#burgerMenu {
+
+/* DROP DOWN MENU */
+
+.menuBtn {
+    height: 80px;
     position: absolute;
-    width: 8em;
-    padding: 2em;
-    margin-top: 600px;
+    top: 0%;
+    right: 0%;
+    margin-top: 60px;
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
-    background-color: #E5EAF0;
-    color: #281B1C;
-    text-transform: uppercase;
-    font-size: 100px;
-    z-index: 100;
+    z-index: 99;
     top: 0;
     left: 0;
+    background-color: rgba(229, 234, 240);
+    background-color: rgba(229, 234, 240, 0.95);
     overflow-y: hidden;
-    text-align: center;
-
+    transition: 0.5s;
 }
+
 .overlay-content {
     position: relative;
+    top: 15%;
     width: 100%;
     text-align: center;
+    margin-top: 30px;
 }
+
 .overlay a {
+    padding: .5em;
+    font-size: 4em;
+    font-weight: bold;
+    color: #281B1C;;
     display: block;
-    margin: 3em;
+    transition: 0.3s;
 }
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #31A7BE;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 8em;
+}
+
+.current {
+    background-color: #EBC239;
+}
+
+
 
 .hidden {
     display: none;
@@ -393,11 +422,17 @@ div#class-media h2{
 }
 
 
+
+
 /* DESKTOP VERSION START */
 
 @media screen and (min-width: 960px) {
-    #burgerMenu {
+/*    #burgerMenu {
         visibility: hidden;
+    }*/
+
+   .menuBtn {
+        display: none;
     }
 
 #frontpageNav {
@@ -671,9 +706,17 @@ div#my-mission img{
     }
 
 
+<<<<<<< HEAD
 div#testimonial {
     background-color:#EBC239;
     height: 800px;
+=======
+div#83.teachingDivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 600px;
+>>>>>>> origin/master
     }
 
 
