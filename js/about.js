@@ -17,11 +17,16 @@ function showAboutSections(sectionList){
     copy.querySelector("h2").textContent=section.title.rendered;
     copy.querySelector("p").innerHTML=section.content.rendered;
 //find the images
-//  if(section._embedded){
-//     copy.querySelector("img").src=section._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-//  } else {
-//     copy.querySelector("img").remove()
-//  }
+  if(section._embedded){
+     copy.querySelector("img").src=section._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
+  } else {
+     copy.querySelector("img").remove()
+  }
+if(section.acf.video){
+     copy.querySelector("video").src=section.acf.video;
+  } else {
+     copy.querySelector("video").remove()
+  }
     parent.appendChild(copy);
 
 })

@@ -14,6 +14,7 @@ function showIntros(introList) {
         copy.querySelector("div").id = intro.slug;
         copy.querySelector("h2").textContent = intro.title.rendered;
         copy.querySelector("p").innerHTML = intro.content.rendered;
+        copy.querySelector("a").href = intro.acf.read_more_link;
         copy.querySelector("img").src = intro._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
 

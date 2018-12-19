@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
+/* COLOR SCHEME:
 
+ turquoise: #31A7BE;
+ yellow: #EBC239;
+ light blue: #DFE6EE;
+ dark brown: #281B1C;
+*/
 
 * {
     box-sizing: border-box;
+
 }
 
 html,
@@ -29,34 +36,56 @@ a:link {
 a:visited {
     color: #000;
 }
-
+#logo{
+   width: 3em;
+   height: auto;
+   float: left;
+   margin: 2em;
+}
+/* READ MORE BUTTONS */
+.hyphen{
+   width: 2em;
+   height: 0.5em;
+   background-color:#31A7BE;
+}
+a.whoIntro{
+    font-weight: bold;
+    margin-left: 100px;
+}
 /* NAVIGATION */
 
 #homeNav{
     background-color: #DFE6EE;
-    padding: 0.5em;
+    padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
+    margin: 0.5em;
     width: 14em;
 }
 #aboutNav {
     background-color: #DFE6EE;
-    padding: 0.5em;
+    padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
+    margin: 0.5em;
     width: 14em;
+
 }
 
 #teachingNav {
     background-color: #31A7BE;
-    padding: 0.5em;
+    padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
+    margin: 0.5em;
     width: 14em;
+
 }
 
 #contactNav {
     background-color: #EBC239;
-    padding: 0.5em;
+    padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
+    margin: 0.5em;
     width: 14em;
+
 }
 
 
@@ -89,17 +118,18 @@ a:visited {
 }
 
 #burgerMenu {
+    position: absolute;
     width: 8em;
     float: right;
     padding: 2em;
 }
 
 .overlay {
-    height: 100%;
+    height: 0%;
     width: 100%;
     position: fixed;
     background-color: #E5EAF0;
-    color: #000;
+    color: #281B1C;
     text-transform: uppercase;
     font-size: 100px;
     z-index: 100;
@@ -109,7 +139,11 @@ a:visited {
     text-align: center;
 
 }
-
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
 .overlay a {
     display: block;
     margin: 3em;
@@ -119,21 +153,14 @@ a:visited {
     display: none;
 }
 
-#parent1,
-#parent2,
-#parent3,
-#parent4 {
-    margin: 0;
-}
-
 /* WHO I AM SECTION*/
 
-#whoiamBackgrd {
+/*.introWrapper #who-i-am {
     margin-top: -100px;
     background-color: #E9C13B;
-}
+}*/
 
-#whoIamWrapper {
+div#who-i-am {
     background-color: #fff;
     border-radius: 80px 0px 0px 80px;
     /*  min-width: 100%;*/
@@ -143,7 +170,7 @@ a:visited {
 
 }
 
-#whoiamTitle {
+div#who-i-am h2{
     font-family: "Old Standard TT", serif;
     font-size: 40px;
     color: #E9C13B;
@@ -151,49 +178,55 @@ a:visited {
 
 /* CAREER SECTION*/
 
-#careerWrapper {
+div#my-career-2 {
     background-color: #E9C13B;
     height: auto;
     margin: 0;
     padding: 4em;
 }
 
-#careerTitle {
+div#my-career-2 h2 {
     font-family: "Old Standard TT", serif;
     font-size: 40px;
     color: #fff;
 }
 
 /* TEACHING SECTION*/
-
-#teachingWrapper {
+.intro-gallery{
+  list-style: none;
+}
+div#my-teaching-mission-2 {
     border-radius: 100px 0px 100px 0px;
     background-color: #E5EAF0;
     padding: 4em;
 }
 
-#teachingTitle {
+div#my-teaching-mission-2 h2 {
     font-family: "Old Standard TT", serif;
     font-size: 40px;
 }
-
+div#my-teaching-mission-2 p img{
+   width: 20vw;
+}
 /* CONTACT SECTION*/
 
-#contactWrapper {
+div#contact {
     background-color: #281B1C;
     margin-top: -2em;
     padding: 4em;
 
 }
 
-#contactTitle {
+div#contact h2{
     font-family: 'Old Standard TT', serif;
     color: #E9C13B;
     font-size: 40px;
 }
 
-#contactP {
+div#contact p {
     color: #fff;
+    line-height: 1.7em;
+
 }
 
 /* here  ends the code for the frontpage mobile */
@@ -203,9 +236,15 @@ a:visited {
 
 
 /* SUBPAGES about, teaching and contact GENERAL CSS */
+#subpagesNav{
+    visibility: hidden;
+}
 .subpagesHeader {
     background-color: #281B1C;
-
+    margin: 0;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .subpagesTitle {
@@ -213,6 +252,7 @@ a:visited {
     color: #fff;
     font-size: 40px;
     text-transform: uppercase;
+    margin-left: 4em;
 }
 
 footer {
@@ -221,55 +261,139 @@ footer {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    align-items: center;
+
 }
 
 .footerLinks a {
     margin: 1em;
 }
 
+#fb{
+  width: 2.6em;
+  height: auto;
+}
+#insta{
+  width: 2.4em;
+  height: auto;
+}
+
 /* ABOUT PAGE SPECIFIC*/
 
-/* MY STORY SECTION in ABOUT PAGE */
-div#biography{
-
+div#my-story{
+    padding: 4em;
     background-color: #E5EAF0;
 }
-
-/* PERFORMANCE CAREER SECTION in ABOUT PAGE */
-
+div#my-story h2{
+    color: #31A7BE;
+    font-family: 'Old Standard TT', serif;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+}
+div#my-story img, div#performance-career img{
+    width: 50vw;
+    margin: auto;
+    display: block;
+    margin-bottom: 3em;
+}
+div#my-mission img{
+    width: 50vw;
+    margin: auto;
+    display: block;
+    margin-bottom: 3em;
+}
+div#performance-career h2{
+    font-family: 'Old Standard TT', serif;
+    font-size: 40px;
+    text-align: center;
+}
 /* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
 div#performance-media{
-
-
+    padding: 3em;
+    height: 600px;
     background-color: #281B1C;
-}
 
+}
+div#performance-media h2{
+    text-align: center;
+    color: #E9C13B;
+    font-family: 'Old Standard TT', serif;
+    font-size: 40px;
+}
 /* here  ends the code for the aboutpage mobile */
 
 /* TEACHING PAGE SPECIFIC */
-
+.class-gallery{
+    background-color: #281B1C;
+    list-style: none;
+    margin: 20px 0;
+    flex-flow: row wrap;
+}
+img.wp-image-34{
+    width: 20vw;
+}
+img.wp-image-33{
+    width: 20vw;
+}
+img.wp-image-32{
+    width: 20vw;
+}
 div#my-mission{
     background-color: #E5EAF0;
+    padding: 3em;
+
+}
+div#my-mission h2{
+    color: #E9C13B;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+
 }
 div#class-description{
     border-radius: 0px 100px 0px 0px;
 }
-div#testimonials{
+div#class-description h2{
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+}
+div#class-description img{
+    width: 50vw;
+    margin: auto;
+    display: block;
+}
+div#class-description p{
+    width: 80vw;
+}
+div#83.{
     background-color: #E9C13B;
 }
 
+div#83 h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+}
 
-
+div#class-media h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+    color: #31A7BE;
+}
 
 
 /* DESKTOP VERSION START */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 960px) {
     #burgerMenu {
         visibility: hidden;
     }
 
-    #frontpageNav {
+#frontpageNav {
         visibility: visible;
         margin-top: -50px;
         margin-bottom: -200px;
@@ -294,91 +418,150 @@ div#testimonials{
 }
 /* FRONTPAGE SECTIONS */
 
-#whoIamWrapper{
+div#who-i-am{
     display: grid;
     grid-template-columns: 2fr 2fr;
     padding: 4em;
-
+    }
 #frontpageNav a {
-        display: block;
-        text-align: center;
-        margin: 1em;
+    display: block;
+    text-align: center;
+    margin: 1em;
     }
 
-    #frontpage {
-        z-index: 2;
+#frontpage {
+    z-index: 2;
     }
 
-    #whoIamWrapper {
+div#who-i-am h2 {
+    margin-right: 4em;
+    grid-area: 1 / 2 / 2 / 3;
+
+    }
+
+div#who-i-am img {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 30vw;
+    margin: 2em;
+    }
+
+div#who-i-am p {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 3em;
+    width: 30vw;
+    line-height: 1.7em;
+
+
+    }
+
+div#my-teaching-mission-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+div#my-teaching-mission-2 h2 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 40vw;
+    }
+/* IMAGE GALLERY ON FRONTPAGE TEACHING INTRO SECTION */
+
+
+div#my-teaching-mission-2 p {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 4em;
+    width: 40vw;
+    margin-top: 3em;
+    line-height: 1.7em;
+
+    }
+.intro-gallery{
+    list-style: none;
+    margin: 20px 0;
+    flex-flow: row wrap;
+}
+    }
+div#my-teaching-mission-2 img{
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 4em;
+    margin-top: 2em;
+    width: 40vw;
+    }
+div#my-teaching-mission-2 p img{
+    grid-area: 1 / 1 / 3 / 2;
+
+    }
+#my-teaching-mission-2 figure.wp-block-image{
+    margin-right: 15em;
+    }
+#my-teaching-mission-2 p figure img.wp-image-25{
+    width: 20vw;
+    }
+#my-teaching-mission-2 p figure img.wp-image-26{
+    width: 20vw;
+    }
+#my-teaching-mission-2 p figure img.wp-image-27{
+    width: 20vw;
+    }
+#my-teaching-mission-2 p figure{
+      grid-area: 2 / 1 / 3 / 4;
+    }
+#my-teaching-mission-2 p ul li{
+
+    }
+div#my-career-2 {
         display: grid;
         grid-template-columns: 2fr 2fr;
         padding: 4em;
-
     }
 
-    #whoiamTitle {
-        margin-right: 4em;
-        grid-area: 1 / 2 / 2 / 3;
-
-    }
-
-    #whoiamImg {
-        grid-area: 1 / 1 / 2 / 2;
-        width: 30vw;
-        margin: 2em;
-    }
-
-    #whoiamP {
-        grid-area: 1 / 2 / 2 / 3;
-        margin-top: 4em;
-        width: 30vw;
-        margin-top: 8em;
-
-    }
-
-    #teachingWrapper {
-        display: grid;
-        grid-template-rows: 2.5fr 1fr;
-        grid-template-columns: 2fr 0.5fr 2fr;
-    }
-
-    #teachingImg1 {
-        grid-area: 1 / 1 / 2 / 2;
-        width: 40vw;
-        margin: 2em;
-    }
-
-    #teachingTitle {
-        grid-area: 1 / 3 / 2 / 4;
-
-    }
-
-    #teachingP {
-        grid-area: 1 / 3 / 2 / 4;
-        margin-top: 4em;
-        width: 30vw;
-        margin-top: 8em;
-
-    }
-
-    #careerWrapper {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        padding: 4em;
-    }
-
-    #careerTitle {
+div#my-career-2 h2 {
         grid-area: 1 / 1 / 2 / 2;
         margin-left: 4em;
     }
 
-    #careerImg {
+div#my-career-2 p {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 4em;
+        margin-top: 3em;
+        line-height: 1.7em;
+
+    }
+
+div#my-career-2 img {
         grid-area: 1/ 2/ 2 / 3;
         margin: 2em;
         width: 30vw;
     }
 
+div#contact {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 4em;
+    }
+
+div#contact img {
+        grid-area: 1/ 2/ 2 / 3;
+        margin: 2em;
+        width: 30vw;
+    }
+
+div#contact h2 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 4em;
+    }
+
+div#contact p {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 30vw;
+        margin-left: 4em;
+        margin-top: 4em;
+        line-height: 1.7em;
+
+    }
 /* TEACHING SUBPAGE */
+div#83.teachingDivs{
+      background-color: #E9C13B;
+    }
 div#testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -387,72 +570,118 @@ div#testimonials{
     }
 img#testimonials{
     grid-area: 1 / 2 / 2 / 3;
-    background-color: #fff;
     }
 p#testimonials{
     grid-area: 1 / 2 / 2 / 3;
+    }
 
-
-    #careerP {
+#careerP {
         grid-area: 1 / 1 / 2 / 2;
         width: 30vw;
         margin-left: 4em;
         margin-top: 8em;
+        line-height: 1.7em;
+
     }
 
-    #careerMoreButton {
+
+#careerMoreButton {
         text-transform: capitalize;
         color: #000;
         margin-left: 4em;
     }
 
-    #careerMoreButton {
+#careerMoreButton {
         grid-area: 1/ 1 / 2 / 2/;
         text-transform: capitalize;
         color: #000;
     }
 
-    #contactWrapper {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        padding: 4em;
+
+
+/* ABOUT SUBPAGE */
+
+#subpagesNav{
+    visibility: visible;
+    margin-top: 3em;
+}
+div#performance-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     }
-
-    #contactImg {
-        grid-area: 1/ 2/ 2 / 3;
-        margin: 2em;
-        width: 30vw;
+div#performance-media img{
+    grid-area: 2 / 1 / 3 / 4;
+    width: 60vw;
+    margin: auto;
     }
-
-    #contactTitle {
-        grid-area: 1 / 1 / 2 / 2;
-        margin-left: 4em;
-    }
-
-    #contactP {
-        grid-area: 1 / 1 / 2 / 2;
-        width: 30vw;
-        margin-left: 4em;
-        margin-top: 8em;
-    }
-
-
-
-    /* TEACHING SUBPAGE */
-    #testimonialWrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2em;
-        height: 600px;
-    }
-
-    #testimonialImg {
-        grid-area: 1 / 2 / 2 / 3;
-        background-color: #fff;
-    }
-
-    #testimonialP {
-        grid-area: 1 / 2 / 2 / 3;
+div#performance-media h2{
+    grid-area: 1 / 1 / 2 / 4;
 
     }
+div#my-story{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    }
+div#my-story h2{
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: -2em;
+    padding: 2em;
+    }
+div#my-story p{
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 2em;
+    line-height: 1.7em;
+
+    }
+div#my-story img{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 35vw;
+    margin-bottom: 15em;
+
+    }
+
+
+/* TEACHING SUBPAGE */
+div#my-mission {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 4em;
+    }
+div#my-mission p{
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 4em;
+    line-height: 1.7em;
+
+    }
+div#my-mission h2{
+    margin-right: 4em;
+    grid-area: 1 / 1 / 2 / 2;
+    }
+div#my-mission img{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 40vw;
+    margin: auto;
+    }
+
+
+div#83.teachingDIvs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    height: 600px;
+    }
+div#testimonials h2{
+    grid-area: 1 / 2 / 2 / 3;
+
+    }
+div#testimonials.teachingDivs img {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 30vw;
+    }
+
+div#83.teachingDivs img {
+    width: 80vw;
+    }
+
 }

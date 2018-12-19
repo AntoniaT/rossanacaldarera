@@ -10,9 +10,11 @@
 </head>
 <body id="frontpage">
   <header id="headerFrontpage">
+
+        <a><img id="logo" src="images/logowhite_1.png" alt="logo rossana"></a>
+
     <!-- NAVIGATION FOR DESKTOP-->
     <nav id="frontpageNav">
-                <a><img src="images/" alt="logo rossana"></a>
                 <a id="aboutNav" href="about.html">About me</a>
                 <a id="teachingNav" href="teaching.html">Teaching</a>
                 <a id="contactNav" href="#contact">Contact</a>
@@ -21,79 +23,77 @@
     <!-- BURGER NAVIGATION FOR MOBILE-->
     <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
 
-    <div class="overlay hidden">
-                <a href="" id="closeMenu" onclick="closeMenu()">&times;</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closeMenu" onclick="closeMenu()">&times;</a>
+
+        <div class="overlay-content">
                 <a href="about.html" id="nav1">About me</a>
                 <a href="teaching.html" id="nav2">Teaching</a>
                 <a href="contact.html" id="nav3">Contact</a>
+        </div>
     </div>
+    <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
+
+     <!--           <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a class="current" href="events.html">Events</a>
+                    <a href="library.html">Game Library</a>
+                    <a href="reviews.html">Game Reviews</a>
+                    <a href="opponent.html">Opponent Finder</a>
+                    <a href="travel.html">Geek Travel</a>
+                </div>
+            </div>
+
+            <img src="images/burger.svg" class="menuBtn">
+            -->
+
+     <!-- HEADER WITH DESCRIPTION-->
+
     <div id="brownWrapper">
     <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1></div>
 
     </header>
 
     <!--TEMPLATES to insert data from Frontpage Post in WP -->
-    <div id="parent1"></div>
+    <main class="frontpage-content"></main>
+
+   <!-- TEMPLATE INTROS-->
 
 
-    <!-- TEMPLATE FOR WHO I AM SECTION-->
+    <template id="frontpageTemplate">
+        <div>
+                    <img src="" alt="">
+                    <h2>TITLE</h2>
+                    <p>LONG TEXT</p>
+                    <a class="whoIntro" href=""><div class="hyphen"></div> READ MORE</a>
 
-    <template id="frontpageTemplate1">
-       <div id="whoiamBackgrd">
-        <article id="whoIamWrapper">
-                   <h2 id="whoiamTitle">WHO I AM TITLE</h2>
-                    <p id="whoiamP">LONG TEXT</p>
-                    <img id="whoiamImg" src="" alt="">
+                    <!-- images for teaching section -->
 
-        </article>
-       </div>
-    </template>
-
-   <!-- TEMPLATE FOR CAREER SECTION-->
-        <div id="parent2"></div>
-
-    <template id="frontpageTemplate2">
-                <article id="careerWrapper">
-                    <h2 id="careerTitle">CAREER TITLE</h2>
-                    <p id="careerP">LONG TEXT</p>
-                    <img id="careerImg" src="" alt="">
-
-        </article>
-    </template>
-
-    <!-- TEMPLATE FOR TEACHING SECTION-->
-    <div id="parent3"></div>
-
-    <template id="frontpageTemplate3">
-        <article id="teachingWrapper">
-                    <h2 id="teachingTitle">TEACHING TITLE</h2>
-                    <p id="teachingP">LONG TEXT</p>
-                    <img id="teachingImg1" src="" alt="">
                     <img id="teachingImg2" src="" alt="">
                     <img id="teachingImg3" src="" alt="">
                     <img id="teachingImg4" src="" alt="">
-        </article>
+        </div>
 
-    </template>
-
-    <!-- TEMPLATE FOR CONTACT SECTION-->
-    <div id="parent4"></div>
-    <div id="contact"></div>
-    <template id="frontpageTemplate4">
-                <article id="contactWrapper">
-                    <h2 id="contactTitle">CAREER TITLE</h2>
-                    <p id="contactP">LONG TEXT</p>
-                    <img id="contactImg" src="" alt="">
-
-        </article>
     </template>
 
 
     <!--END OF TEMPLATES -->
 
+<!-- FOOTER -->
+
+<footer class="footerLinks">
+                <a href="about.html" id="nav1">About me</a>
+                <a href="teaching.html" id="nav2">Teaching</a>
+                <a href="index.html#contact" id="nav3">Contact</a>
+                <a href=""><img id="fb" src="images/facebook.png" alt="facebook icon"></a>
+                <a href=""><img id="insta" src="images/instagram.png" alt="instagram icon"></a>
+
+</footer>
 
 <script src="js/shared.js"></script>
-<script src="js/frontpage-test2.js"></script>
+<script src="js/denise-js.js"></script>
 
 </body>
 
