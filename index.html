@@ -9,20 +9,37 @@
     <link rel="icon" type="image/png" href="images/Logo">
 
 </head>
+
 <body id="frontpage">
-  <header id="headerFrontpage">
+    <header id="headerFrontpage">
 
         <a><img id="logo" src="images/logowhite_1.png" alt="logo rossana"></a>
 
-    <!-- NAVIGATION FOR DESKTOP-->
-    <nav id="frontpageNav">
-                <a id="aboutNav" href="about.html">About me</a>
-                <a id="teachingNav" href="teaching.html">Teaching</a>
-                <a id="contactNav" href="#contact">Contact</a>
+        <!-- NAVIGATION FOR DESKTOP-->
+        <nav id="frontpageNav">
+            <a id="aboutNav" href="about.html">About me</a>
+            <a id="teachingNav" href="teaching.html">Teaching</a>
+            <a id="contactNav" href="#contact">Contact</a>
 
-    </nav>
-    <!-- BURGER NAVIGATION FOR MOBILE-->
-    <a href=""><img id="burgerMenu" src="images/burger-menu.svg" alt="burger menu"></a>
+        </nav>
+        <!-- BURGER NAVIGATION FOR MOBILE-->
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a class="current" href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <img src="images/burger-menu.svg" class="menuBtn">
+
+
+
+        <!-- <a href=""><img id="burgerMenu" src="images/burger-menu.svg"></a>
 
     <div id="myNav" class="overlay">
         <a href="" id="closeMenu" onclick="closeMenu()">&times;</a>
@@ -34,31 +51,35 @@
         </div>
     </div>
 
-     <!-- HEADER WITH DESCRIPTION-->
 
-    <div id="brownWrapper">
-    <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1></div>
+        <!-- HEADER WITH DESCRIPTION-->
+
+        <div id="brownWrapper">
+            <h1 id="fontpageTitle">Dance teacher<br>Dancer/Choreographer</h1>
+        </div>
 
     </header>
 
     <!--TEMPLATES to insert data from Frontpage Post in WP -->
     <main class="frontpage-content"></main>
 
-   <!-- TEMPLATE INTROS-->
+    <!-- TEMPLATE INTROS-->
 
 
     <template id="frontpageTemplate">
         <div>
-                    <img src="" alt="">
-                    <h2>TITLE</h2>
-                    <p>LONG TEXT</p>
-                    <a class="whoIntro" href=""><div class="hyphen"></div> READ MORE</a>
+            <img src="" alt="">
+            <h2>TITLE</h2>
+            <p>LONG TEXT</p>
+            <a class="whoIntro" href="">
+                <div class="hyphen"></div> READ MORE
+            </a>
 
-                    <!-- images for teaching section -->
+            <!-- images for teaching section -->
 
-                    <img id="teachingImg2" src="" alt="">
-                    <img id="teachingImg3" src="" alt="">
-                    <img id="teachingImg4" src="" alt="">
+            <img id="teachingImg2" src="" alt="">
+            <img id="teachingImg3" src="" alt="">
+            <img id="teachingImg4" src="" alt="">
         </div>
 
     </template>
@@ -66,7 +87,8 @@
 
     <!--END OF TEMPLATES -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
+
 
 <footer class="footerLinks">
                 <a href="about.html">About me</a>
@@ -75,10 +97,11 @@
                 <a href=""><img id="fb" src="images/facebook.png" alt="facebook icon"></a>
                 <a href=""><img id="insta" src="images/instagram.png" alt="instagram icon"></a>
 
-</footer>
 
-<script src="js/shared.js"></script>
-<script src="js/denise-js.js"></script>
+    </footer>
+
+    <script src="js/shared.js"></script>
+    <script src="js/denise-js.js"></script>
 
 </body>
 

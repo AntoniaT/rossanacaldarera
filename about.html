@@ -15,7 +15,7 @@
     <h1 class="subpagesTitle">About me</h1>
 
     <nav id="subpagesNav">
-                <a href=""><img id="burgerMenu" src="images/burger-menu.svg" alt="burger menu"></a>
+
                 <a href="index.html" id="homeNav">Home</a>
                 <a href="teaching.html" id="teachingNav">Teaching</a>
                 <a href="index.html#contact" id="contactNav">Contact</a>
@@ -24,12 +24,21 @@
 
     <!-- BURGER NAVIGATION FOR MOBILE-->
 
-    <div class="overlay hidden">
-                <a href="" id="closeMenu" >&times;</a>
-                <a href="about.html" id="nav1">Home</a>
-                <a href="teaching.html" id="nav2">Teaching</a>
-                <a href="contact.html" id="nav3">Contact</a>
-    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a class="current" href="about.html">About Me</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <img src="images/burger-menu.svg" class="menuBtn">
+
+
+
 
     </header>
 <!-- TEMPLATE FOR ABOUTPAGE POSTS-->
