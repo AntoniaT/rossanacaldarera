@@ -71,6 +71,7 @@ a.whoIntro{
     width: 14em;
 }
 #aboutNav {
+
     background-color: #A3B6CA;
     padding: 0.5em 2em 0.5em 2em;
     text-transform: uppercase;
@@ -126,6 +127,7 @@ a.whoIntro{
 
 
 /* DROP DOWN MENU */
+
 #menuBtnFront{
     height: 40px;
     top: 0%;
@@ -166,6 +168,7 @@ a.whoIntro{
 
 .overlay a {
     padding: .5em;
+
     font-size: 2em;
     font-weight: bold;
     color: #281B1C;;
@@ -176,6 +179,7 @@ a.whoIntro{
 .overlay a:hover,
 .overlay a:focus {
     color: #31A7BE;
+
 }
 
 .overlay .closebtn {
@@ -187,7 +191,21 @@ a.whoIntro{
 
 .current {
     background-color: #EBC239;
+
 }
+
+.overlay .closebtn {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 8em;
+}
+
+.current {
+    background-color: #EBC239;
+}
+
+
 
 .hidden {
     display: none;
@@ -569,6 +587,18 @@ div#performance-career p{
         visibility: hidden;
     }*/
 .menuBtn {
+
+
+
+/* DESKTOP VERSION START */
+
+@media screen and (min-width: 960px) {
+/*    #burgerMenu {
+        visibility: hidden;
+    }*/
+
+   .menuBtn {
+
         display: none;
     }
 #logo{
@@ -883,6 +913,7 @@ div#my-mission img{
     width: 40vw;
     margin: auto;
     }
+
 div#class-description{
     display: grid;
     grid-template-columns: 2fr 2fr;
