@@ -19,6 +19,7 @@ function showSections(sectionList){
     copy.querySelector("div").id = section.slug;
     copy.querySelector("h2").textContent= section.title.rendered;
     copy.querySelector("p").innerHTML= section.content.rendered;
+
 //find the images
   if(section._embedded){
      copy.querySelector("img").src=section._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;

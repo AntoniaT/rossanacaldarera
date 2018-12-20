@@ -10,11 +10,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
-
-/*function openMenu() {
-  document.getElementById("#myNav").style.height = "100%";
-}
-
-function closeMenu() {
-  document.getElementById("#myNav").style.height = "0%";
-}*/
