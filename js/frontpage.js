@@ -18,6 +18,7 @@ function showIntros(introList) {
         copy.querySelector("img").src = intro._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
 
+
         parent.appendChild(copy);
     })
 }
