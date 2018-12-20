@@ -2,6 +2,8 @@ const template = document.querySelector("#frontpageTemplate").content;
 const parent = document.querySelector(".frontpage-content");
 
 
+/* FETCH FROM FRONT PAGE POSTS TEMPLATE */
+
 
 function getIntrotexts() {
     fetch("http://anckdesign.com/kea/rossana/wp-json/wp/v2/Front_page?categories=14&_embed").then(res => res.json()).then(showIntros);

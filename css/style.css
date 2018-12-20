@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Lora:400i');
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 /* COLOR SCHEME:
 
@@ -15,10 +15,7 @@
 
 }
 body {
-/*
-    width: 100%;
-    height: 100%;
-*/
+
     margin: 0;
     font-family: "Lato", sans-serif;
     padding: 0;
@@ -43,6 +40,18 @@ a:visited {
    height: auto;
    margin: 2em;
 }
+#logoTitle{
+   display: inline-block;
+
+}
+#rossanaTitle{
+   font-family: "Josefin Sans", sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: -3em;
+   margin-left: 3em;
+   font-size: 35px;
+}
 /* READ MORE BUTTONS */
 .hyphen{
    width: 2em;
@@ -51,7 +60,6 @@ a:visited {
 }
 a.whoIntro{
     font-weight: bold;
-/*    margin-left: 100px; */
 }
 /* NAVIGATION */
 
@@ -145,7 +153,6 @@ a.whoIntro{
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: rgba(229, 234, 240);
     background-color: rgba(229, 234, 240, 0.95);
     overflow-y: hidden;
     transition: 0.5s;
@@ -244,7 +251,9 @@ div#my-career-2 img{
     margin: auto;
     display: block;
 }
+
 /* TEACHING SECTION*/
+
 .intro-gallery{
   list-style: none;
 }
@@ -267,6 +276,7 @@ div#my-teaching-mission-2 img{
     margin: auto;
     display: block;
 }
+
 /* CONTACT SECTION*/
 
 div#contact {
@@ -293,13 +303,11 @@ div#contact img{
 div#contact a.whoIntro{
     visibility: hidden;
 }
-/* here  ends the code for the frontpage mobile */
+/* here  ends the code for the FRONTPAGE mobile */
 
 
 
-
-
-/* SUBPAGES about, teaching and contact GENERAL CSS */
+/* SUBPAGES about, teaching and GENERAL CSS */
 #subpagesNav{
     display: none;
 }
@@ -381,6 +389,7 @@ div#performance-career h2{
 div#performance-career{
     padding: 2em;
 }
+
 /* PERFORMANCE MEDIA SECTION in ABOUT PAGE */
 div#performance-media{
     padding: 3em;
@@ -396,13 +405,14 @@ div#performance-media h2{
 div#performance-media p{
     width: 90vw;
     display:block;
-    margin-left: -0.5em;
+    margin-left: -0.8em;
 }
 div#performance-media img{
     width: 80vw;
     margin-left: -3em;
 }
-/* here  ends the code for the aboutpage mobile */
+
+/* here  ends the code for the ABOUTPAGE mobile */
 
 /* TEACHING PAGE SPECIFIC */
 .class-gallery{
@@ -472,14 +482,25 @@ div#class-media img{
     width: 80vw;
     margin-left: -2em;
 }
+/* here  ends the code for the TEACHINGPAGE mobile */
 
 
-/* TABLET VERSION START */
+/* TABLET and SMALLER SCREENS VERSION START */
 @media screen and (max-width: 1050px) and (min-width: 800px) {
 .menuBtn {
         display: none;
     }
-
+#frontpageTitle{
+   margin-top: 30em;
+    }
+#rossanaTitle{
+   font-family: "Josefin Sans", sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: -2.6em;
+   margin-left: 3em;
+   font-size: 40px;
+}
 #subpagesNav{
    display: inline;
     margin-top: 3em;
@@ -515,6 +536,7 @@ nav#subpagesNav a#contactNav{
     display: block;
     text-align: center;
     margin: 1em;
+    font-weight: bold;
 }
 .subpagesTitle{
     margin-left: 4em;
@@ -531,6 +553,7 @@ div#who-i-am img{
 div#my-teaching-mission-2 img{
     width: 50vw;
     }
+
 /* SUBPAGES SPECIFIC */
 div#my-story img, div#performance-career img{
     width: 50vw;
@@ -552,8 +575,12 @@ div#performance-media p{
     display:block;
     margin: auto;
 }
+div#performance-career p{
+    text-align: center;
+    }
+
 }
-/* DESKTOP VERSION START */
+/* DESKTOP and BIGGER SCREENS VERSION START */
 
 @media screen and (min-width: 1050px) {
 /*    #burgerMenu {
@@ -574,10 +601,19 @@ div#performance-media p{
 
         display: none;
     }
+#logo{
+        width: 4em;
+    }
+#rossanaTitle{
+
+   margin-top: -2.4em;
+   margin-left: 2.5em;
+   font-size: 52px;
+}
 
 #frontpageNav {
         visibility: visible;
-        margin-top: -50px;
+        margin-top: 50px;
         margin-left: -2em;
         margin-bottom: -200px;
         padding: 3em;
@@ -588,10 +624,19 @@ div#performance-media p{
     display: block;
     text-align: center;
     margin: 1em;
+    font-weight: bold;
+    font-size: 20px;
 }
 #frontpage{
     z-index: 2;
 }
+#brownWrapper{
+    height: 150px;
+    }
+#frontpageTitle{
+   margin-top: 8.5em;
+   font-size: 35px;
+    }
 footer{
     display: flex;
     justify-content: center;
@@ -631,8 +676,12 @@ div#who-i-am p {
     margin-top: 3em;
     width: 30vw;
     line-height: 1.7em;
-
-
+    }
+div#who-i-am a.whoIntro {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-top: 33em;
+    width: 30vw;
+    line-height: 1.7em;
     }
 
 div#my-teaching-mission-2 {
@@ -644,8 +693,6 @@ div#my-teaching-mission-2 h2 {
     grid-area: 1 / 3 / 2 / 4;
     width: 40vw;
     }
-/* IMAGE GALLERY ON FRONTPAGE TEACHING INTRO SECTION */
-
 
 div#my-teaching-mission-2 p {
     grid-area: 1 / 3 / 2 / 4;
@@ -653,8 +700,13 @@ div#my-teaching-mission-2 p {
     width: 40vw;
     margin-top: 3em;
     line-height: 1.7em;
-
     }
+
+div#my-teaching-mission-2 a.whoIntro {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 20em;
+    }
+
 .intro-gallery{
     list-style: none;
     margin: 20px 0;
@@ -711,6 +763,16 @@ div#my-career-2 img {
         margin: 2em;
         width: 30vw;
     }
+div#my-career-2 a.whoIntro{
+     color: #000;
+     grid-area: 1 / 1 / 2 / 2;
+     margin-top: 33em;
+     margin-left: 8em;
+    }
+div#my-career-2 div.hyphen{
+    color: #000;
+
+    }
 
 div#contact {
         display: grid;
@@ -737,6 +799,7 @@ div#contact p {
         line-height: 1.7em;
 
     }
+
 /* TEACHING SUBPAGE */
 
 div#testimonials{
@@ -809,6 +872,24 @@ div#my-story img{
     margin-bottom: 15em;
 
     }
+div#performance-career{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr 6fr;
+    }
+div#performance-career p{
+    grid-area: 2/ 1 / 3 / 2;
+    text-align: center;
+    }
+div#performance-career h2{
+    grid-area: 1/ 1 / 2 / 3;
+    text-align: center;
+    }
+div#performance-career img{
+    grid-area: 2/ 2 / 3 / 3;
+    margin-top: 3em;
+    width:35vw;
+    }
 
 
 /* TEACHING SUBPAGE */
@@ -870,7 +951,6 @@ div#testimonial {
 
     }
 
-
-
-
 }
+
+/* THE END */
