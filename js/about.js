@@ -22,11 +22,15 @@ function showAboutSections(sectionList){
   } else {
      copy.querySelector("img").remove()
   }
-if(section.acf.video){
-     copy.querySelector("video").src=section.acf.video;
-  } else {
-     copy.querySelector("video").remove()
-  }
+//if(section.acf.video){
+/*     copy.querySelector("video").innerHTML=section.acf["video"];
+        if (str.includes('\"')) { str = JSON.parse(str); }else{
+               copy.querySelector("video").remove()
+
+        }*/
+  //} else {
+ //    copy.querySelector("video").remove()
+ // }
     parent.appendChild(copy);
 
 })
