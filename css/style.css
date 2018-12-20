@@ -177,8 +177,6 @@ a.whoIntro{
     background-color: #EBC239;
 }
 
-
-
 .hidden {
     display: none;
 }
@@ -599,9 +597,7 @@ div#contact p {
 
     }
 /* TEACHING SUBPAGE */
-div#83.teachingDivs{
-      background-color: #E9C13B;
-    }
+
 div#testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -705,18 +701,15 @@ div#my-mission img{
     margin: auto;
     }
 
-
-<<<<<<< HEAD
 div#testimonial {
     background-color:#EBC239;
     height: 800px;
-=======
-div#83.teachingDivs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    height: 600px;
->>>>>>> origin/master
+    }
+
+div#testimonial {
+    background-color:#EBC239;
+    height: 800px;
+
     }
 
 
